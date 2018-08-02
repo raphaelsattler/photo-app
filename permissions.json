@@ -2,19 +2,19 @@
     "Version": "2012-10-17",
     "Statement": [
         {
+            "Sid": "VisualEditor0",
             "Effect": "Allow",
-            "Action": "S3:*",
-            "Resource": "arn:aws:s3:::photoappsattler/*",
-            "Condition": {}
+            "Action": "s3:ListBucket",
+            "Resource": "*"
         },
         {
+            "Sid": "VisualEditor1",
             "Effect": "Allow",
-            "Action": [
-                "s3:ListBucket",
-                "s3:GetBucketLocation"
-            ],
-            "Resource": "arn:aws:s3:::photoappsattler",
-            "Condition": {}
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::photoappsattler",
+                "arn:aws:s3:::photoappsattler/*"
+            ]
         }
     ]
 }
