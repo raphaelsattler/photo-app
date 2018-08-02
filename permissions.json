@@ -4,7 +4,7 @@
         {
             "Effect": "Allow",
             "Action": "S3:*",
-            "Resource": "arn:aws:s3:::bucketname/*",
+            "Resource": "arn:aws:s3:::photoappsattler/*",
             "Condition": {}
         },
         {
@@ -13,7 +13,7 @@
                 "s3:ListBucket",
                 "s3:GetBucketLocation"
             ],
-            "Resource": "arn:aws:s3:::bucketname",
+            "Resource": "arn:aws:s3:::photoappsattler",
             "Condition": {}
         }
     ]
